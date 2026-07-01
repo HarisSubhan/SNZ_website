@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useLocation } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { useTheme } from "@/hooks/useTheme";
-import logoAsset from "@/assets/snz-logo.png.asset.json";
+import logoAsset from "@/assets/snz-logo.png";
 
 const links = [
   { to: "/lithuania", label: "Company Formation" },
@@ -23,7 +23,7 @@ export function Nav() {
     <nav className="fixed top-0 inset-x-0 z-50 bg-background/85 backdrop-blur-md border-b border-foreground/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
-          <img src={logoAsset.url} alt="SNZ Ventures" className="size-9 sm:size-10 rounded-full shrink-0" />
+          <img src={logoAsset} alt="SNZ Ventures" className="size-9 sm:size-10 rounded-full shrink-0" />
           <span className="font-serif text-base sm:text-lg font-bold tracking-tight uppercase text-foreground truncate">SNZ Ventures</span>
         </Link>
         <div className="hidden lg:flex items-center gap-5 xl:gap-7 text-[10.5px] font-semibold tracking-[0.14em] uppercase whitespace-nowrap">

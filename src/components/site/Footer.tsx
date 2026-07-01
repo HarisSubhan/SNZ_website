@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/snz-logo.png.asset.json";
+import logoAsset from "@/assets/snz-logo.png";
 
 export function Footer() {
   return (
@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <img src={logoAsset.url} alt="SNZ Ventures" className="size-10 rounded-full bg-white" />
+              <img src={logoAsset} alt="SNZ Ventures" className="size-10 rounded-full bg-white" />
               <span className="font-serif text-lg font-bold uppercase">SNZ Ventures</span>
             </div>
             <p className="font-serif italic text-xl leading-snug max-w-sm text-white/80">
